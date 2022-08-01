@@ -9,17 +9,25 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" type="text/css" href="./success_style.css"/>
+        <link rel="stylesheet" type="text/css" href="./error_style.css"/>
     </head>
 
     <body bgcolor="black">
         <div class="loginbox">
             <img src="avatar.png" class="avatar"/> <br><br><br>
             <font color="white" align="center">
-                <form>
-                    <h3> Invalid Email or Password </h3>
+                <form action="/login" method="POST">
+                    <h3> *Invalid Password or Email </h3>
+                    <p>Email</p>
+                    <input type="text" name="email" placeholder="Enter Email.." required/>
+                    <p>Password</p>
+                    <input type="text" name="password" placeholder="Enter password.." required/>
+                    <p>
+                        <input type="submit" value="Login"/>
+                    </p>
 
-                    <button><a href="./index.html">Go Back to Sign In Page</a></button>
+                    <p><a href="./signup.html">Don't have an account? Get one!</a></p>
+                    <p><a href="#">Forgot your Password? Recover it!</a></p>
 
                 </form>
             </font>
